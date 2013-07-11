@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ATColorNamesTests");
+    //STFail(@"Unit tests are not implemented yet in ATColorNamesTests");
 }
 
 @end
