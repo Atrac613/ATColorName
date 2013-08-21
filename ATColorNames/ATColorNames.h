@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ATColorNames : NSObject
+
+- (NSArray *)getSimilarColorsFromUIColor:(UIColor *)color language:(NSString *)language;
 
 @end

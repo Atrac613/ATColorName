@@ -7,7 +7,16 @@
 //
 
 #import "ATColorNames.h"
+#import "ATColorNamesDao.h"
+#import "ATColorDetail.h"
 
 @implementation ATColorNames
+
+- (NSArray *)getSimilarColorsFromUIColor:(UIColor *)color language:(NSString *)language {
+    ATColorNamesDao *colorNames = [[ATColorNamesDao alloc] initWithLanguage:language];
+    NSMutableArray *results = [colorNames findColorNameWithColor:color];
+    
+    return [NSArray arrayWithArray:results];
+}
 
 @end

@@ -1,4 +1,7 @@
 language: objective-c
 
+before_install:
+ - brew install xctool
+
 script:
   - make clean test

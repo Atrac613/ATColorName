@@ -1,15 +1,17 @@
 PROJECT = ATColorNames.xcodeproj
-TEST_TARGET = ATColorNamesTests
+SCHEME = ATColorNames
 
 clean:
-	xcodebuild \
+	xctool \
 		-project $(PROJECT) \
+		-scheme $(SCHEME) \
 		clean
 
 test:
-	xcodebuild \
-		-project $(PROJECT) \
-		-target $(TEST_TARGET) \
+	xctool \
+                -project $(PROJECT) \
+                -scheme $(SCHEME) \
 		-sdk iphonesimulator \
-		-configuration Debug \
-		TEST_AFTER_BUILD=YES
+		VALID_ARCHS=i386 \
+		build \
+		test 
