@@ -1,11 +1,23 @@
 PROJECT = ATColorNames.xcodeproj
 SCHEME = ATColorNames
+UNIVERSAL_SCHEME = ATColorNames-Universal
+
+all:
+	xctool \
+		-project $(PROJECT) \
+		-scheme $(UNIVERSAL_SCHEME) \
+		build
 
 clean:
 	xctool \
 		-project $(PROJECT) \
 		-scheme $(SCHEME) \
-		clean
+		clean \
+		
+		xctool \
+                	-project $(PROJECT) \
+                	-scheme $(UNIVERSAL_SCHEME) \
+                	clean
 
 test:
 	xctool \
