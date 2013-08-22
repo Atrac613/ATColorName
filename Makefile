@@ -40,6 +40,6 @@ test-with-coverage:
                 test
 
 send-coverage:
-  coveralls \
-      -e ATColorNamesTests
+	coveralls \
+		-e ATColorNamesTests
 
