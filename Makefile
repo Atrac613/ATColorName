@@ -15,29 +15,29 @@ clean:
 		clean \
 		
 		xctool \
-                	-project $(PROJECT) \
-                	-scheme $(UNIVERSAL_SCHEME) \
-                	clean
+			-project $(PROJECT) \
+			-scheme $(UNIVERSAL_SCHEME) \
+			clean
 
 test:
 	xctool \
-                -project $(PROJECT) \
-                -scheme $(SCHEME) \
+		-project $(PROJECT) \
+		-scheme $(SCHEME) \
 		-sdk iphonesimulator \
 		VALID_ARCHS=i386 \
 		build \
 		test
 
 test-with-coverage:
-        xctool \
-                -project $(PROJECT) \
-                -scheme $(SCHEME) \
-                -sdk iphonesimulator \
-                VALID_ARCHS=i386 \
-                GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
-                GCC_GENERATE_TEST_COVERAGE_FILES=YES \
-                build \
-                test
+	xctool \
+		-project $(PROJECT) \
+		-scheme $(SCHEME) \
+		-sdk iphonesimulator \
+		VALID_ARCHS=i386 \
+		GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
+		GCC_GENERATE_TEST_COVERAGE_FILES=YES \
+		build \
+		test
 
 send-coverage:
 	coveralls \
