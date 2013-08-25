@@ -3,7 +3,7 @@ SCHEME = ATColorNames
 UNIVERSAL_SCHEME = ATColorNames-Universal
 
 all:
-	xctool \
+	xcodebuild \
 		-project $(PROJECT) \
 		-scheme $(UNIVERSAL_SCHEME) \
 		build
