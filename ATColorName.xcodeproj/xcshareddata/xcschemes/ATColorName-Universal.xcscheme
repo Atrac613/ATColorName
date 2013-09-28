@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "06394F8B178EE62D007C325F"
-               BuildableName = "ATColorNames-Universal"
-               BlueprintName = "ATColorNames-Universal"
-               ReferencedContainer = "container:ATColorNames.xcodeproj">
+               BlueprintIdentifier = "06E58B0417F6C8B000FBEE3B"
+               BuildableName = "ATColorName-Universal"
+               BlueprintName = "ATColorName-Universal"
+               ReferencedContainer = "container:ATColorName.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

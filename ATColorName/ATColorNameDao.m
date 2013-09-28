@@ -1,14 +1,14 @@
 //
-//  ATColorNamesDao.m
-//  ATColorNames
+//  ATColorNameDao.m
+//  ATColorName
 //
 //  Created by Osamu Noguchi on 7/14/13.
 //  Copyright (c) 2013 Osamu Noguchi. All rights reserved.
 //
 
-#import "ATColorNamesDao.h"
+#import "ATColorNameDao.h"
 
-@implementation ATColorNamesDao
+@implementation ATColorNameDao
 
 - (id)initWithLanguage:(NSString *)language_ {
     if (self = [super init]) {

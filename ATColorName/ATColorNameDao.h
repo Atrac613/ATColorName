@@ -1,6 +1,6 @@
 //
-//  ATColorNamesDao.h
-//  ATColorNames
+//  ATColorNameDao.h
+//  ATColorName
 //
 //  Created by Osamu Noguchi on 7/14/13.
 //  Copyright (c) 2013 Osamu Noguchi. All rights reserved.
@@ -11,7 +11,7 @@
 #import "ATBaseDao.h"
 #import "ATColorDetail.h"
 
-@interface ATColorNamesDao : ATBaseDao {
+@interface ATColorNameDao : ATBaseDao {
     NSString *language;
 }
 

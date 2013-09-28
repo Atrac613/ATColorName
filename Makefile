@@ -1,6 +1,6 @@
-PROJECT = ATColorNames.xcodeproj
-SCHEME = ATColorNames
-UNIVERSAL_SCHEME = ATColorNames-Universal
+PROJECT = ATColorName.xcodeproj
+SCHEME = ATColorName
+UNIVERSAL_SCHEME = ATColorName-Universal
 
 all:
 	xcodebuild \
@@ -25,7 +25,6 @@ test:
 		-scheme $(SCHEME) \
 		-sdk iphonesimulator \
 		VALID_ARCHS=i386 \
-		build \
 		test
 
 test-with-coverage:
@@ -41,5 +40,5 @@ test-with-coverage:
 
 send-coverage:
 	coveralls \
-		-e ATColorNamesTests
+		-e ATColorNamsTests
 

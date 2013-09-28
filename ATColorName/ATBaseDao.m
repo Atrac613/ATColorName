@@ -14,7 +14,7 @@
 
 - (id)init{
     if (self = [super init]) {
-        NSString *filePath = [NSString stringWithFormat:@"%@/color_names.db", [[NSBundle bundleForClass:[self class]] pathForResource:@"ATColorNames" ofType:@"bundle"]];
+        NSString *filePath = [NSString stringWithFormat:@"%@/color_names.db", [[NSBundle bundleForClass:[self class]] pathForResource:@"ATColorName" ofType:@"bundle"]];
         
         db = [FMDatabase databaseWithPath:filePath];
         if ([db open]) {

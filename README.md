@@ -1,11 +1,11 @@
-## ATColorNames
+## ATColorName*
 
 A color name dictionary framework.
 
 ## Code Status
 
-* [![Build Status](https://api.travis-ci.org/Atrac613/ATColorNames.png)](https://travis-ci.org/Atrac613/ATColorNames)
+* [![Build Status](https://api.travis-ci.org/Atrac613/ATColorName.png)](https://travis-ci.org/Atrac613/ATColorName)
 
 ## License
 
-ATColorNames is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+ATColorName is released under the [MIT License](http://www.opensource.org/licenses/MIT).
